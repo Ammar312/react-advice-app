@@ -25,13 +25,16 @@ const Script = () => {
       });
   };
   return (
-    <>
-      <div className="main">
-        <h1>{state.quote}</h1>
-        <h3>{state.author}</h3>
+    <div className="main">
+      <div className="box">
+        <div className="quoteBox">
+          <h1>{state.quote}</h1>
+          <h3>{state.author}</h3>
+        </div>
+
         <button onClick={getQuote}>Button</button>
       </div>
-    </>
+    </div>
   );
 };
 

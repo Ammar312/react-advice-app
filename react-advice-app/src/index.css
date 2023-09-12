@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.356),
+      rgba(0, 0, 0, 0.178)
+    ),
+    url(image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  border: 3px solid white;
+  color: white;
+}
