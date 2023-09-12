@@ -17,6 +17,7 @@ const Script = () => {
         const ranQuoteAuthor = response.data[ranNum].author;
         setState({ quote: ranQuote, author: ranQuoteAuthor });
         console.log(ranNum);
+        console.log(apiData);
       })
       .catch(function (error) {
         // handle error
@@ -25,9 +26,11 @@ const Script = () => {
   };
   return (
     <>
-      <h1>{state.quote}</h1>
-      <h3>{state.author}</h3>
-      <button onClick={getQuote}>Button</button>
+      <div className="main">
+        <h1>{state.quote}</h1>
+        <h3>{state.author}</h3>
+        <button onClick={getQuote}>Button</button>
+      </div>
     </>
   );
 };
