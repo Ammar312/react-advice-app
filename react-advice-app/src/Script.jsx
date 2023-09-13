@@ -14,10 +14,9 @@ const Script = () => {
         const apiData = response.data;
         const ranNum = Math.floor(Math.random() * apiData.length);
         const ranQuote = response.data[ranNum].text;
-        const ranQuoteAuthor = response.data[ranNum].author;
-        setState({ quote: ranQuote, author: ranQuoteAuthor });
+        const ranQuoteAuthor = response.data[ranNum].author.split(",");
+        setState({ quote: ranQuote, author: ranQuoteAuthor[0] });
         console.log(ranNum);
-        console.log(apiData);
       })
       .catch(function (error) {
         // handle error
