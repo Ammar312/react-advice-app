@@ -49,9 +49,13 @@ body {
 }
 .btn {
   padding: 0.7em 1em;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   background: transparent;
   border: 2px solid white;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 0.247);
 }
