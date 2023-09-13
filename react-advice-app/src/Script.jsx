@@ -31,7 +31,9 @@ const Script = () => {
           <h3>{state.author}</h3>
         </div>
 
-        <button onClick={getQuote}>Button</button>
+        <button className="btn" onClick={getQuote}>
+          <span>QUOTE</span>
+        </button>
       </div>
     </div>
   );
